@@ -45,7 +45,7 @@ class MessageCellView: UICollectionViewCell{
         profImageView.layer.cornerRadius = 32 / 2
         addSubview(messageContainer)
         messageContainer.layer.cornerRadius = 12
-        messageContainer.anchor(top: topAnchor)
+        messageContainer.anchor(top: topAnchor, bottom: bottomAnchor)
         messageContainer.widthAnchor.constraint(lessThanOrEqualToConstant: 250).isActive = true
         containerLeftAnchor = messageContainer.leftAnchor.constraint(equalTo: profImageView.rightAnchor, constant: 12)
         containerLeftAnchor.isActive = false

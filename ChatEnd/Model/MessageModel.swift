@@ -26,3 +26,5 @@ struct MessageModel{
         self.isFromCurrentUser = fromId == Auth.auth().currentUser?.uid 
     }
 }
+
+

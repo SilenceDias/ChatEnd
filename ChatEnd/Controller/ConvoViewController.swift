@@ -12,6 +12,8 @@ private let reuseIndentifier = "ChatCell"
 class ConvoViewController: UIViewController {
     
     private let tableView = UITableView()
+    
+    private var conversations = [Conversation]()
    
     private let newMessegeButton: UIButton = {
         let button = UIButton(type: .system)
@@ -27,6 +29,7 @@ class ConvoViewController: UIViewController {
         super.viewDidLoad()
         configureUI()
         authenticateUser()
+        fetchChats()
     }
     
     @objc func showProfile(){
@@ -39,6 +42,14 @@ class ConvoViewController: UIViewController {
         nav.modalPresentationStyle = .fullScreen
         present(nav, animated: true, completion: nil)
     }
+    
+    func fetchChats(){
+        Service.fetchConversations { conversations in
+            self.conversations = conversations
+            self.tableView.reloadData()
+        } 
+    }
+    
     func authenticateUser(){
         if Auth.auth().currentUser?.uid == nil{
             presentLoginScreen()
@@ -91,12 +102,12 @@ class ConvoViewController: UIViewController {
 }
 extension ConvoViewController:UITableViewDataSource{
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 2
+        return conversations.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: reuseIndentifier, for: indexPath )
-        cell.textLabel?.text = "Test Cell"
+        cell.textLabel?.text = conversations[indexPath.row].message.text
         return cell
     }
     
