@@ -35,7 +35,7 @@
 		E8D2664E2831BF31002EC940 /* RegistrationViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8D2664D2831BF31002EC940 /* RegistrationViewModel.swift */; };
 		E8D266502831C5C9002EC940 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = E8D2664F2831C5C9002EC940 /* GoogleService-Info.plist */; };
 		E8D266522831F51E002EC940 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8D266512831F51E002EC940 /* MainViewController.swift */; };
-		E8D266562831F9EC002EC940 /* UserTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8D266552831F9EC002EC940 /* UserTableViewCell.swift */; };
+		E8D266562831F9EC002EC940 /* ClubTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8D266552831F9EC002EC940 /* ClubTableViewCell.swift */; };
 		E8D266582831FE58002EC940 /* UserModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8D266572831FE58002EC940 /* UserModel.swift */; };
 		E8D2665A2831FF17002EC940 /* Service.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8D266592831FF17002EC940 /* Service.swift */; };
 		E8D2666628323353002EC940 /* Constant.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8D2666528323353002EC940 /* Constant.swift */; };
@@ -72,7 +72,7 @@
 		E8D2664D2831BF31002EC940 /* RegistrationViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationViewModel.swift; sourceTree = "<group>"; };
 		E8D2664F2831C5C9002EC940 /* GoogleService-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "GoogleService-Info.plist"; sourceTree = SOURCE_ROOT; };
 		E8D266512831F51E002EC940 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
-		E8D266552831F9EC002EC940 /* UserTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserTableViewCell.swift; sourceTree = "<group>"; };
+		E8D266552831F9EC002EC940 /* ClubTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClubTableViewCell.swift; sourceTree = "<group>"; };
 		E8D266572831FE58002EC940 /* UserModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserModel.swift; sourceTree = "<group>"; };
 		E8D266592831FF17002EC940 /* Service.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Service.swift; sourceTree = "<group>"; };
 		E8D2666528323353002EC940 /* Constant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constant.swift; sourceTree = "<group>"; };
@@ -153,7 +153,7 @@
 			children = (
 				E88A6B4F283B39FD0040C738 /* CustomTextField.swift */,
 				E88A6B4D283B396B0040C738 /* InputContainerView.swift */,
-				E8D266552831F9EC002EC940 /* UserTableViewCell.swift */,
+				E8D266552831F9EC002EC940 /* ClubTableViewCell.swift */,
 				E88A6B3D283AEA2B0040C738 /* ProfileHeaderView.swift */,
 				E88A6B41283B0D380040C738 /* ProfileCellView.swift */,
 				E88A6B45283B17BD0040C738 /* ProfileFooterVIew.swift */,
@@ -349,7 +349,7 @@
 				E8D2665A2831FF17002EC940 /* Service.swift in Sources */,
 				E88A6B4E283B396B0040C738 /* InputContainerView.swift in Sources */,
 				E8D2662528313690002EC940 /* ViewController.swift in Sources */,
-				E8D266562831F9EC002EC940 /* UserTableViewCell.swift in Sources */,
+				E8D266562831F9EC002EC940 /* ClubTableViewCell.swift in Sources */,
 				E8D2662128313690002EC940 /* AppDelegate.swift in Sources */,
 				E88A6B40283B0BAF0040C738 /* ProfileVIewModel.swift in Sources */,
 				E88A6B50283B39FD0040C738 /* CustomTextField.swift in Sources */,

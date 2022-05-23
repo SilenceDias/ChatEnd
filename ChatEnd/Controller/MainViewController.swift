@@ -28,7 +28,7 @@ class MainViewController: UITableViewController {
     func configureUi(){
         configureNavigationBar(withTitle: "Clubs", prefersLargeTitles: true)
         tableView.tableFooterView = UIView()
-        tableView.register(UserTableViewCell.self, forCellReuseIdentifier: reuseIdentifier )
+        tableView.register(ClubTableViewCell.self, forCellReuseIdentifier: reuseIdentifier )
         tableView.rowHeight = 80
         let image = UIImage(systemName: "person.circle.fill")
        
@@ -79,7 +79,7 @@ extension MainViewController{
     }
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: reuseIdentifier, for: indexPath ) as! UserTableViewCell
+        let cell = tableView.dequeueReusableCell(withIdentifier: reuseIdentifier, for: indexPath ) as! ClubTableViewCell
         cell.club = clubs[indexPath.row]
         return cell
     }

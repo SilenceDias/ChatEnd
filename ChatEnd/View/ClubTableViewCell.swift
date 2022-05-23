@@ -1,5 +1,5 @@
 //
-//  UserTableViewCell.swift
+//  ClubTableViewCell.swift
 //  ChatEnd
 //
 //  Created by Диас Мухамедрахимов on 16.05.2022.
@@ -8,7 +8,7 @@
 import UIKit
 import SDWebImage
 
-class UserTableViewCell: UITableViewCell {
+class ClubTableViewCell: UITableViewCell {
     
     var club: ClubModel?{
         didSet {configure()}
@@ -26,12 +26,6 @@ class UserTableViewCell: UITableViewCell {
         label.font = UIFont.boldSystemFont(ofSize: 14)
         return label
     }()
-    private let fullnameLabel: UILabel = {
-        let label = UILabel()
-        label.font = UIFont.systemFont(ofSize: 14)
-        label.textColor = .lightGray
-        return label
-    }()
     override init(style: UITableViewCell.CellStyle, reuseIdentifier: String?){
         super.init(style: style, reuseIdentifier: reuseIdentifier)
         addSubview(profileImageView)
@@ -39,7 +33,7 @@ class UserTableViewCell: UITableViewCell {
         profileImageView.setDimensions(height: 64, width: 64)
         profileImageView.layer.cornerRadius = 64 / 2
         
-        let stack = UIStackView(arrangedSubviews: [usernameLabel, fullnameLabel])
+        let stack = UIStackView(arrangedSubviews: [usernameLabel])
         stack.axis = .vertical
         stack.spacing = 2
         addSubview(stack)
