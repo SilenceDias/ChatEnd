@@ -10,7 +10,7 @@ import SDWebImage
 
 class UserTableViewCell: UITableViewCell {
     
-    var user: UserModel?{
+    var club: ClubModel?{
         didSet {configure()}
     }
     
@@ -51,11 +51,11 @@ class UserTableViewCell: UITableViewCell {
     }
     
     func configure(){
-        guard let user = user else {return }
-        fullnameLabel.text = user.fullName
-        usernameLabel.text = user.username
+        guard let club = club else {return }
+
+        usernameLabel.text = club.name
         
-        guard let url = URL(string: user.profileImageUrl) else {return }
+        guard let url = URL(string: club.imageLogoUrl) else {return }
         profileImageView.sd_setImage(with: url)
     }
     

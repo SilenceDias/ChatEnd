@@ -18,7 +18,7 @@ struct UserModel{
         self.uid = dictionary["uid"] as? String ?? ""
         self.profileImageUrl = dictionary["profileImageUrl"] as? String ?? ""
         self.username = dictionary["username"] as? String ?? ""
-        self.fullName = dictionary["fullName"] as? String ?? ""
+        self.fullName = dictionary["fullname"] as? String ?? ""
         self.email = dictionary["email"] as? String ?? ""
     }
 }
